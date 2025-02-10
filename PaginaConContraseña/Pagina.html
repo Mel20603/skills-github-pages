@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Principal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="verificarAcceso()">
+    <h1>UN AÑO TAL VEZ MAS PERO CON ESTAS RAZONES</h1>
+    <p>Solo puedes ver esto si ingresaste la contraseña.</p>
+
+
+</body>>
+
+    <h2>UN AÑO TAL VEZ MAS PERO CON ESTAS RAZONES </h2>
+
+    <img src="deadpool.jpg" alt="deadpool" class="main-image">
+
+    <button onclick="showContent('razones')">Tema 1: Razones por las que no me iré</button>
+    <button onclick="showContent('tema2')">Tema 2: No quiero que sea normal</button>
+    <button onclick="showContent('tema3')">Tema 3: 2025</button>
+
+    <!-- Tema 1 -->
+    <div id="razones" class="content">
+        <h3>Razones por las que no me iré</h3>
+        <p>Razón 1: Te amo</p>
+        <p>Razón 2: Quiero ser solo tuya</p>
+        <p>Razón 3: Quiero intentarlo contigo</p>
+        <p>Razón 4: Me pareces una persona buena</p>
+        <p>Razón 5: Te quiero</p>
+    </div>
+
+    <!-- Tema 2 -->
+    <div id="tema2" class="content">
+        <h3>No quiero que sea normal</h3>
+        <p>No quiero que lo nuestro sea algo común, quiero que me veas con amor, que me mires con intensidad, que sientas que estar conmigo es especial.</p>
+        <button onclick="saveChoice('tema2', 'Acepto')">Acepto</button>
+        <button onclick="saveChoice('tema2', 'Rechazo')">Rechazo</button>
+        <p id="tema2Choice"></p>
+    </div>
+
+    <!-- Tema 3 -->
+    <div id="tema3" class="content">
+        <h3>2025</h3>
+        <p>Quiero tener propósitos este año y no quiero estar con las mismas discusiones de siempre. Quiero que trates de darlo todo por mí porque quiero sentirme como una princesa de Disney. No quiero que me alejes ni que digas que tu amor y querer por mí siempre serán algo normal. Quiero pasar días especiales contigo.</p>
+        <button onclick="saveChoice('tema3', 'Acepto')">Acepto</button>
+        <button onclick="saveChoice('tema3', 'Rechazo')">Rechazo</button>
+        <p id="tema3Choice"></p>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
